@@ -1,14 +1,36 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  margin-left: 210px;
 }
 
 
 body{
-  background-color: gray;
+  background-color: rgb(206, 219, 221);
 }
 
+a {
+  color: #696e70;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.button{
+    border: none;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #37A9D6;
+    color: #fafafa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}

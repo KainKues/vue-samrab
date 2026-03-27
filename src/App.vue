@@ -25,9 +25,8 @@ import { RouterLink, RouterView } from 'vue-router'
         top:0;
         bottom: 0;
         background-color: rgb(255, 251, 251);
-        min-width: 300px;
-        max-width: 15%;
-
+        max-width: max-content;
+        padding-right: 30px;
     }
 
     .sidebar__nav{
@@ -36,7 +35,6 @@ import { RouterLink, RouterView } from 'vue-router'
         padding: 30px;
         font-size: 26px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
     }
 
 </style>

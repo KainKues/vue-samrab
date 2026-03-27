@@ -1,15 +1,13 @@
 <script setup>
-
+    import TheHead from '../components/TheHead.vue';
+    import TheCatalog from '../components/TheCatalog.vue';
 </script>
 
 <template>
-    <div class="slider"></div>
+    <TheHead></TheHead>
+    <div class="d"></div>
 </template>
 
 <style scoped>
-    .slider{
-        width: 200px;
-        height: 200px;
-        background-color: rebeccapurple;
-    }
+
 </style>

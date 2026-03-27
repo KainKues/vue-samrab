@@ -23,7 +23,7 @@ import {defineProps, defineEmits} from 'vue'
         </div>
         <span class="card__title">{{ name }}</span>
         <span class="card__price">{{ price }} руб.</span>
-        <button class="card__button"
+        <button class="button"
                 @click="emits('addToCart', id)"
                 >Купить</button>
     </div>
@@ -33,7 +33,7 @@ import {defineProps, defineEmits} from 'vue'
 
 .card{
     background-color: #FFFFFF;
-    width: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -67,13 +67,5 @@ img{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.card__button{
-    border: none;
-    height: 60px;
-    border-radius: 8px;
-    background-color: #37A9D6;
-    color: #fafafa;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
+
 </style>

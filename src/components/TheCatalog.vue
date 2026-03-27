@@ -1,7 +1,9 @@
 <script setup>
 import TheCard from './TheCard.vue';
 import {ref} from 'vue'
-let candy = ref([
+import TheHead from './TheHead.vue';
+
+let toys = ref([
     {
       id: 1,
       img: "https://img.detmir.st/vShTyuFW6uXlztTq4DDkZaK9yFoFkacvQlIJ2WLbOUM/rs:fit:700:700/g:sm/aHR0cHM6Ly9jYXRhbG9nLWNkbi5kZXRtaXIuc3QvbWVkaWEvQVRPek1SVmNlTTVTRDR2OFkyaUhBZTRPaER3d3Nzc1hXcHAwbVViTVE2az0uanBlZw.webp",
@@ -76,19 +78,20 @@ let candy = ref([
     },
 ])
 
-
+  console.log('Родитель передает:', toys.value)
 </script>
   
 <template>
   <div class="wrapper">
     <TheCard
-      v-for="el in candy"
+      v-for="el in toys"
       :key ='el.id'
       :id="el.id"
       :img = 'el.img'
       :name = 'el.title'
       :price = 'el.price'
     />
+    <TheHead :toys="toys" />
   </div>
 
 </template>
@@ -97,8 +100,8 @@ let candy = ref([
   .wrapper{
     margin-top: 40px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 </style>
